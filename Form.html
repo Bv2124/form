@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./1.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="./1.css">
+</head>
+<body>
+   <div class="Container">
+    <div class="Section1">
+        <div class="Form">
+            <form name="Newform" action="" onsubmit="return formvalidate()" >
+                <p class="Welcome"><span class="Emoji">&#128512</span>"Fill out the details below!"<span class="Emoji">&#128512</span></p><br/>
+                <br/><label for="FirstName">First Name</label>
+                <input type="text" id="FirstName"  minlength="4"><br/>
+                <p id="fname" class="error"></p>
+                <label for="LastName">Last Name</label>
+                <input type="text" id="LastName"  minlength="4"><br/>
+                <p id="lname" class="error"></p>                                
+                <label for="SA">Street Address</label>
+                <input type="text" id="SA"><br/>
+                <p id="SAE" class="error"></p>                                
+                <label for="Al2">Address line 2</label>
+                <input type="text" id="Al2"><br/>
+                <p id="Al2E" class="error"></p>                                
+                <label for="City">City</label>
+                <input type="text" id="City"><br/>
+                <p id="CityE" class="error"></p>                                
+                <label for="Zip">Zip-code</label>
+                <input type="text" id="Zip" pattern="[0-9]*" minlength="6"><br/>
+                <p id="ZipE" class="error"></p>                                
+                <label for="PN">Phone Number</label>
+                <input type="text" id="PN" minlength="10" pattern="[0-9]*"><br/>
+                <p id="PNE" class="error"></p>                                
+                <label for="EA">Email Address</label>
+                <input type="email" id="EA"><br/>
+                <p id="EAE" class="error"></p> 
+                <div><label for="gender">Gender</label> <br/>
+                    <input type="radio" required name="GENDER"  id="g1" value="Male">Male
+                    <input type="radio" required name="GENDER" id="g2" value="Female">Female             
+                    <input type="radio" required name="GENDER" id="g3" value="Others">Others             
+                    <input type="radio" required name="GENDER" id="g4" value="PNS">Prefer Not to say!
+                    <p id="gender" class="error"></p>
+                </div>                                                
+                <label for="AGE">Age</label>            
+                <input type="text"  id="AGE"><br/>
+                <p id="Age" class="error"></p>
+                <div>
+                <label for="Marital Status">Marital Status</label><br/>             
+                <input type="radio" required name="MS" id="MS1" value="Married">Married
+                <input type="radio" required name="MS" id="MS2" value="Unmarried"><label for="g2">Unmarried</label>               
+                <input type="radio" required name="MS" id="MS3" value="Seperated"><label for="g2">Seperated</label>               
+                <input type="radio" required name="MS" id="MS4" value="Others"><label for="g2">Others</label>
+                <p id="MS" class="error"></p>
+                </div>                
+                <label for="ECN">Emergency Contact Name</label>
+                <input type="text" id="ECN">
+                <p id="ECNE" class="error"></p> 
+                <label for="lname">Emergency Contact Relationship</label>
+                <input type="text" id="ECR">
+                <p id="ECRE" class="error"></p>
+                <button type="button" class="Submit" onclick="formvalidate()">Submit</button>
+               </form> 
+        </div>
+    </div>
+   </div>
+</body>
+</html>
